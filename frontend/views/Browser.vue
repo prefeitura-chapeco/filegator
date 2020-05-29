@@ -92,6 +92,7 @@
                  :loading="isLoading"
                  :checkable="can('batchDownload') || can('write') || can('zip')"
                  @contextmenu="rightClick"
+                 checkbox-position="right"
         >
           <template slot-scope="props">
             <b-table-column :label="lang('Name')" :custom-sort="sortByName" field="data.name" sortable>
